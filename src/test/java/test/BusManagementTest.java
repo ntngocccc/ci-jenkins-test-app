@@ -26,7 +26,7 @@ public class BusManagementTest extends BaseTest {
         int index = random.nextInt(words.length);
 
         page.search(words[index]);
-        page.add(RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.generateRandomNumber(500, 5000));
+        page.add(RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.generateRandomString(), RandomHelper.randomTime(), RandomHelper.randomTime(), RandomHelper.generateRandomNumber(500, 5000));
         page.editBus(RandomHelper.generateRandomString(), RandomHelper.generateRandomString());
         page.delete();
     }
