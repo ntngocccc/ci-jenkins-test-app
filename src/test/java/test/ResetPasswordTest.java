@@ -87,7 +87,7 @@ public class ResetPasswordTest extends BaseTest {
     @Test(priority = 8)
     public void TC08() {
         page.resetPassword("khachhang.1205@gmail.com", "khachhang", RandomHelper.generateRandomPassword(8));
-        page.confirmPopUp();
+//        page.confirmPopUp();
         String message = page.getToastMessage();
         Assert.assertEquals(message, "Kiểm tra lại mật khẩu");
     }
